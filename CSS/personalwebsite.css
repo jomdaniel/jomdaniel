@@ -1,0 +1,249 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	background-color: #fff1e6;
+}
+
+
+.w3-bar{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  
+}
+.w3-bar-item.w3-button{
+	font-size: 15px;
+	color: black;
+	padding: 15px;
+	margin-top: 13px;
+	background: none;
+	border: none;
+
+}
+
+
+.coverimage{
+	width: 100vw;
+	height: 46.5vw;
+	overflow: hidden;
+	margin-top: 60px;
+	position: relative;
+	display: block; /* Make the image a block element */
+    margin-left: auto; /* Automatically add margin to left */
+    margin-right: auto; /* Automatically add margin to right */
+    object-fit: cover;
+    object-position: top;
+   
+}
+img {
+    width: 100%;
+
+}
+.myimage{
+	width: 20vw;
+	padding-left: 50px;
+	flex: 1;
+
+}
+.myimage img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.aboutme{
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 60px;
+}
+.AboutContainer{
+	display: flex;
+	margin-top: 20px;
+	column-gap: 200px;
+	justify-content: flex-start;
+	align-items: center;
+	padding-bottom: 170px;
+
+}
+
+.Personalinfo, .Background{
+	text-align: left;
+	font-size: calc(1em+1vw);
+}
+.info-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	padding: 20px;
+	max-width: 650px;
+	flex: 2;
+	padding-right: 20px;
+	order: 2;
+	margin-top: -250px;
+	font-size: 20px;
+	padding-left: 75px;
+}
+
+  .main-content {
+  flex: 3; /* Takes up 75% of the space */
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: center;
+
+}
+.sidebar {
+  flex: 1; /* Takes up 25% of the space */
+  background-color: #fff1e6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.title{
+	font-family: tahoma, sans-serif;
+	font-size: calc(1.5em + 1vw);
+	padding: 2em;
+	background: none;
+	cursor: pointer;
+	border: none;
+	color: black;
+	font-weight: bold;
+
+}
+.title:hover{
+	color: gray;
+}
+
+#gallery_section {
+	background-color: #f5ebe0;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 20px;
+	margin: 20px auto;
+	border: 2px solid #ddd;
+	width: 50vw;
+	max-width: 600px
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+	
+}
+#picture {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: 24vw; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image fits within the box */
+}
+#caption{
+	text-align: center;
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+}
+
+header{
+	text-align: center;
+}
+#gallery_menu {
+    text-align: center;
+}
+
+#picture_number {
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 10px;
+}
+
+#contact-section {
+    height: 100vh; /* Ensure it occupies full viewport height */
+    display: flex;
+    align-items: flex-end; /* Align the contact bar to the bottom */
+    justify-content: flex-end; /* Align it to the right */
+    padding-bottom: 20px; /* Ensures there’s padding above the footer */
+    min-height: 100vh; /* Optionally ensure it fills the entire viewport */
+    background-color: #fff1e6;
+}
+
+.contact-bar {
+    position: fixed; /* Positioned relative to the viewport */
+    bottom: 20px; /* 20px from the bottom of the viewport */
+    right: 20px; /* 20px from the right of the viewport */
+    background-color: #fff1e6; /* Background color */
+    border: 2px solid black; /* Border for styling */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    padding: 15px;
+    z-index: 1000; /* Ensures it appears on top */
+    width: 150px; /* Fixed width */
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+.contact-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-bar li {
+    margin: 10px 0;
+}
+
+.contact-bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-bar a:hover {
+    color: grey;
+}
+
+.contact-bar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+form input[type="button"] {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+form input[type="button"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+form input[type="button"]:active {
+    background-color: #388e3c; /* Even darker green on click */
+}
+
+h5 p {
+	color: #555;
+

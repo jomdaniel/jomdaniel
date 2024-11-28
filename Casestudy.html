@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+ 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="CSS/personalwebsite.css">
+	<title></title>
+</head>
+<body>
+	<section>
+		<div class="w3-bar w3-sand">
+			<div class="w3-bar-item w3-left "><a class="title">JOM</a></div>
+			<a href="#contact_section" class="w3-bar-item w3-button w3-right">Contact</a>
+			<a href="#gallery_section" class="w3-bar-item w3-button w3-right">Gallery</a>
+			<a href="#aboutme_section" class="w3-bar-item w3-button w3-right">About Me</a>
+			<a href="#" class="w3-bar-item w3-button w3-right">Home</a>
+		</div>
+		<div class="coverimage"> 
+			<img src="Images/coverimage.jpg">
+		</div>
+	</section>
+	<section id="aboutme_section">
+	  <div class="aboutme"><h1>About Me</h1></div>
+	  <div class="AboutContainer">
+	    <div class="main-content">
+	      <div class="myimage">
+	        <img src="Images/myimage.jpg" alt="Profile Image">
+	      </div>
+	      <div class="info-content">
+	      	<p> Hello! Welcome to my personal website, I am Jomari, currently a 2nd Year Student from the College of Infomation and Communications Technology that has a little bit of knowledge in making a website. In this webpage you will know more about me atleast a most half of me.</p>
+	      </div>
+	    </div>
+    <aside class="sidebar">
+    <h2><b>Personal Info</b></h2>
+    	<ul class="Personalinfo">
+    		<li>Name: Jomari Daniel Dayao</li>
+    		<li>Likes: Video games, shows/movies, online shopping</li>
+    		<li>Dislikes: Noise, nosy</li>
+    		<li>Hobbies: Swimming, Cycling, and Sleeping</li>
+    	</ul>
+    	<br>
+    <h2><b>Education Background</b></h2>
+    	<ul class="Background">
+    		<li>College: Nueva Ecija University of Science and Technology</li>
+    		<li>High School: Nueva Ecija University of Science and Technology</li>
+    		<li>Elementary: St. Christopher Montessori School of Sta. Rosa</li>
+    	</ul>
+    	
+    </aside>
+  </div>
+</section>
+	<div>
+		<section id = "gallery_section"> 
+			<article>
+				<header>
+                    <h2>My Gallery</h2>
+                </header>
+                
+                <br />
+                	<img id = "picture" src = "Images/picture1.jpg" width = "480px" height = "480px"></img>
+
+                <br />
+                <script src="personalwebsite.js"></script>
+                <div>
+                    <p style = "text-align: center;" id = "picture_number">1/10</p>
+                    <form style = "text-align: center;">
+                        <input type = "button" value = "Prev" onclick = "(x == 1) ? x = 1 : x = x - 1; document.getElementById('picture').src = 'Images/picture' + x + '.jpg';
+                        document.getElementById('caption').innerHTML = captions[x]; document.getElementById('picture_number').innerHTML = x + '/' + 10" />
+                        <input type = "button" value = "Next" onclick = "(x == 10) ? x = 10 : x = x + 1; document.getElementById('picture').src = 'Images/picture'+x+'.jpg';
+                        document.getElementById('caption').innerHTML = captions[x]; document.getElementById('picture_number').innerHTML = x + '/' + 10" />
+                    </form>
+                </div>
+                
+                <br />
+                
+                <p id = "caption">This is my photo where i finished Sub1-10K Challenge in 2015, where i finished 10km running in under 1 hour.</p>
+                
+			</article>
+		</section>
+	</div>
+	<section id="contact_section">
+	<div class="contact-bar">
+	    <ul>
+	        <li id="contact">
+	            <a href="https://www.facebook.com/jomaridaniel1230" target="_blank">
+	                <img src="Images/fb.png" alt="Facebook"> Facebook
+	            </a>
+	        </li>
+	        <li>
+	            <a href="https://x.com/MyMJom1" target="_blank">
+	                <img src="Images/x.webp" alt="Twitter"> Twitter
+	            </a>
+	        </li>
+	        <li>
+	            <a href="https://www.instagram.com/jomdeee/" target="_blank">
+	                <img src="Images/instagram.png" alt="Instagram"> Instagram
+	            </a>
+	        </li>
+	        <li >
+	            <a href="mailto:jomdaniel1230@gmail.com">
+	                <img src="Images/email.png" alt="Email"> Email Me
+	            </a>
+	        </li>
+	    </ul>
+	</div>
+	</section>
+	
+</body>
+</html>
